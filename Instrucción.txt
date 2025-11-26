@@ -1,0 +1,10 @@
+En caso de usar un compilador desactualizado el programa puede presentar problemas para compilar.
+En el código se usa la función stoi la cual pertenece a la biblioteca
+string, sin embargo por lo mencionado anteriormente puede presentar problemas al compilar. Para solucionarlo desde dev c++ hay que hacer lo siguiente. Dirigirse a:
+ Tools > Compiler Options
+
+Activar la opción "Add the following commands when calling the compiler" y dentro de su apartado escribir lo siguiente: 
+
+-std=c++11
+
+Con esto se solucionará el problema que tiene el compilador con dicha función
